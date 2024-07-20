@@ -9,6 +9,8 @@ services:
     restart: unless-stopped
     privileged: true
     network_mode: host
+    ports:
+      - "8123:8123"
     devices:
       - /dev/ttyACM0:/dev/ttyACM0
       - /dev/bus/usb/001/002:/dev/ttyBT
